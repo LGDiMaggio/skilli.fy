@@ -1,0 +1,18 @@
+{
+  "name": "@skillify/mcp",
+  "version": "0.1.0",
+  "description": "MCP server detection, registry, and .mcp.json config generation.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@skillify/core": "*"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "@skillify/core",
+  "version": "0.1.0",
+  "description": "Core schemas, workflow graph, skill generator, and validator for Skillify.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.22.0",
+    "yaml": "^2.4.0",
+    "archiver": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.0"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@skillify/recorder",
+  "version": "0.1.0",
+  "description": "Recording engine with pluggable OS providers (terminal, fs, process, window).",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@skillify/core": "*",
+    "chokidar": "^3.6.0"
+  },
+  "license": "Apache-2.0"
+}

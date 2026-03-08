@@ -1,0 +1,26 @@
+{
+  "name": "skillify",
+  "version": "0.1.0",
+  "description": "Convert real workflows into Claude Skills — CLI toolkit.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "skillify": "dist/cli.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@skillify/core": "*",
+    "@skillify/recorder": "*",
+    "@skillify/mcp": "*",
+    "commander": "^12.0.0",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.0"
+  },
+  "license": "Apache-2.0"
+}

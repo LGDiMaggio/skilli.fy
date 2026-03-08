@@ -1,0 +1,12 @@
+node_modules/
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+recordings/
+*.zip
+coverage/
+.DS_Store
+Thumbs.db
+demo-workflow/
