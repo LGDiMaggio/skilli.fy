@@ -12,7 +12,7 @@ module.exports = {
     es2022: true,
   },
   rules: {
-    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+    "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_", varsIgnorePattern: "^_" }],
     "@typescript-eslint/no-explicit-any": "warn",
     "no-console": "off",
   },

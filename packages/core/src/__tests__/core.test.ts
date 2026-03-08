@@ -251,6 +251,6 @@ describe("redactObject", () => {
       },
     };
     const result = redactObject(event);
-    expect((result as any).nested.deep.value).not.toContain("ghp_1234567890abcdef");
+    expect((result as Record<string, unknown> & { nested: { deep: { value: string } } }).nested.deep.value).not.toContain("ghp_1234567890abcdef");
   });
 });

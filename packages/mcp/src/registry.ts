@@ -64,7 +64,7 @@ export const MCP_REGISTRY: McpServerEntry[] = [
         "gh\\s",
         "git\\s(push|pull|clone|remote|fetch|log|commit|branch|checkout|merge|rebase|tag)",
         "hub\\s",
-        "github\.com",
+        "github[.]com",
       ],
       filePatterns: [".github/**", "*.github.io", ".gitignore", ".gitmodules"],
     },

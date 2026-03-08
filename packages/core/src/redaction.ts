@@ -27,7 +27,7 @@ const BUILTIN_PATTERNS: RegExp[] = [
   // Generic JWT
   /eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}/g,
   // Email addresses
-  /[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/g,
+  /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g,
   // IPv4 addresses (not loopback)
   /(?<!\.)\b(?!127\.0\.0\.1)(?:\d{1,3}\.){3}\d{1,3}\b/g,
   // Private key blocks

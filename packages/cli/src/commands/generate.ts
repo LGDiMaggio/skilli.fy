@@ -15,7 +15,6 @@ import { SessionManager } from "@skillify/recorder";
 import {
   mineWorkflow,
   generateSkillManifest,
-  generateSkillMarkdown,
   writeSkillToDisk,
   validateSkill,
   type ValidationIssue,

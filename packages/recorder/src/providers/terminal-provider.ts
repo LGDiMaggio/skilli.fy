@@ -70,7 +70,7 @@ export class TerminalProvider implements RecordingProvider {
 
     let currentOutput = "";
 
-    const emitCommandEvent = (command: string, exitCode: number | null) => {
+    const _emitCommandEvent = (command: string, exitCode: number | null) => {
       const output = captureOutput ? currentOutput.slice(0, maxLen) : undefined;
       const event: RecordingEvent = {
         id: randomUUID(),

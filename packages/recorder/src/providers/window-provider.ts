@@ -140,7 +140,7 @@ export class WindowProvider implements RecordingProvider {
       }
 
       // Linux — xdotool
-      const windowId = execSync("xdotool getactivewindow", { encoding: "utf-8", timeout: 2000 }).trim();
+      const _windowId = execSync("xdotool getactivewindow", { encoding: "utf-8", timeout: 2000 }).trim();
       const title = execSync(`xdotool getactivewindow getwindowname`, { encoding: "utf-8", timeout: 2000 }).trim();
       const pid = execSync(`xdotool getactivewindow getwindowpid`, { encoding: "utf-8", timeout: 2000 }).trim();
       return {

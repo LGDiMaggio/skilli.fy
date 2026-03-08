@@ -10,7 +10,7 @@ import { Command } from "commander";
 import chalk from "chalk";
 import * as path from "node:path";
 import * as fs from "node:fs";
-import { validateSkill, type ValidationIssue } from "@skillify/core";
+import { validateSkill } from "@skillify/core";
 
 export function registerValidateCommand(program: Command): void {
   program

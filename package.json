@@ -9,7 +9,7 @@
   "scripts": {
     "build": "npm run build --workspaces",
     "clean": "npm run clean --workspaces --if-present",
-    "lint": "eslint packages/*/src --ext .ts",
+    "lint": "eslint packages/cli/src packages/core/src packages/mcp/src packages/recorder/src --ext .ts",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --build tsconfig.json"
