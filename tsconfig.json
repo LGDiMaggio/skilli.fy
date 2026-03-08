@@ -1,9 +1,9 @@
 {
   "files": [],
   "references": [
-    { "path": "packages/core" },
-    { "path": "packages/recorder" },
-    { "path": "packages/mcp" },
-    { "path": "packages/cli" }
+    { "path": "packages/core/tsconfig.build.json" },
+    { "path": "packages/recorder/tsconfig.build.json" },
+    { "path": "packages/mcp/tsconfig.build.json" },
+    { "path": "packages/cli/tsconfig.build.json" }
   ]
 }
